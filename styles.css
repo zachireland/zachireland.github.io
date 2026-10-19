@@ -1,8 +1,7 @@
-:root{--ink:#eaf0f6;--muted:#96a4b5;--dim:#566579;--blue:#81a7ff;--cyan:#72e1d1;--gold:#e8c77b;--bg:#07101d;--panel:#0c1727;--line:rgba(234,240,246,.14);--serif:"Source Serif 4",Georgia,serif;--sans:"Source Sans 3",Arial,sans-serif;--mono:"Roboto Mono",monospace}
+:root{--ink:#eaf0f6;--muted:#96a4b5;--dim:#566579;--cyan:#72e1d1;--bg:#07101d;--line:rgba(234,240,246,.14);--serif:"Source Serif 4",Georgia,serif;--sans:"Source Sans 3",Arial,sans-serif;--mono:"Roboto Mono",monospace}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 85% 8%,rgba(60,102,184,.17),transparent 34%),radial-gradient(circle at 0 75%,rgba(38,124,117,.09),transparent 30%);pointer-events:none;z-index:-2}
 .noise{position:fixed;inset:0;opacity:.045;pointer-events:none;z-index:20;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
 .skip-link{position:fixed;left:1rem;top:-4rem;background:var(--ink);color:var(--bg);padding:.7rem 1rem;z-index:100}
 .skip-link:focus{top:1rem}
@@ -20,7 +19,6 @@ a{color:inherit}
 .hero-content{position:relative;z-index:2;max-width:920px}
 .section-number{font:11px var(--mono);letter-spacing:.17em;text-transform:uppercase;color:var(--cyan)}
 h1{font:400 clamp(4.5rem,12.5vw,11rem)/.76 var(--serif);letter-spacing:-.065em;margin:2rem 0}
-h1 em{font-weight:400;color:transparent;-webkit-text-stroke:1px rgba(234,240,246,.65)}
 .pronouns{font:11px var(--mono);color:var(--muted);letter-spacing:.15em;text-transform:uppercase;margin-left:.4rem}
 .hero-deck{font-size:clamp(1rem,1.7vw,1.3rem);max-width:650px;color:#bdc8d5;margin:2.5rem 0}
 .hero-actions{display:flex;gap:.8rem;flex-wrap:wrap}
@@ -35,9 +33,8 @@ footer a{color:var(--muted)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
 @media (max-width:800px){.site-header{height:68px}.menu-button{display:block}.site-header nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);padding:1.5rem;flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}.hero{min-height:calc(100svh - 68px);grid-template-columns:1fr;padding-top:7rem}.section-heading{grid-template-columns:1fr;gap:1.5rem}footer{gap:1rem;flex-wrap:wrap}}
 @media (max-width:520px){h1{font-size:23vw}.brand small{display:none}}
-:root{--ink:#16231f;--muted:#5b6964;--dim:#7e8985;--blue:#2b5f63;--cyan:#246c63;--gold:#a17b2c;--bg:#fff;--panel:#f1f5f2;--line:rgba(22,35,31,.17)}
+:root{--ink:#16231f;--muted:#5b6964;--dim:#7e8985;--cyan:#246c63;--bg:#fff;--line:rgba(22,35,31,.17)}
 body{background:#fff;color:var(--ink)}
-body:before{display:none}
 .site-header,.hero{background-image:linear-gradient(90deg,rgba(4,11,13,.78) 0%,rgba(4,11,13,.55) 48%,rgba(4,11,13,.28) 100%),url("Milky Way Web.png");background-size:cover;background-position:center;background-attachment:fixed}
 .site-header{color:#f7fbfa;border-bottom-color:rgba(255,255,255,.24)}
 .brand small,.site-header nav a{color:rgba(255,255,255,.72)}
